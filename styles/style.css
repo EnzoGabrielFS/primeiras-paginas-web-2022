@@ -1,0 +1,184 @@
+body{
+    background-color: #b3b3b3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.active{
+    height: 20px;
+}
+
+.active::after{
+    background: #585858;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 15px;
+}
+
+.hide{
+    display: none !important;
+}
+
+/* Cabeçalho */
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header{
+    background-color: #585858;
+    padding: 10px 0 10px 10px;
+}
+
+#head{
+    display: flex;
+    margin: 0 auto;
+    max-width: 2010px;
+}
+
+.icon-header{
+    width: 100px;
+    margin: 10px 10px 10px;
+}
+
+.primary-title{
+    align-self: center;
+    color: #ffffff;
+    font-size: 32px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Barra de Navegação */
+
+nav {
+    background-color: #9c9c9c;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+#list-categories{
+    display: flex;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+#list-categories .categorie{
+    align-self: center;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+/* === BODY === */
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14em;
+    
+}
+
+/* === CARD === */
+
+.card{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.5s all;
+    width: 26rem;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.image-card {
+    border-style: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: block;
+    height: 280px;
+    width: 100%;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body .title-card{
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.card-body .type-food{
+    color: #6c757d;
+}
+
+.card-body .heart-icon{
+    color: #e42200ee;
+    display: block;
+    font-size: 18px;
+    padding-top: 5px;
+    width: fit-content;
+}
+
+.heart-icon::before{
+    font-weight: bold !important;
+}
+.heart-icon:hover{
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+footer {
+	text-align: center;
+	background-color: #585858;
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+	margin: 20px 0 0;
+}
+
+.logordp {
+    width: 100px;
+}
+
+/* Tela Mobile */
+
+@media (max-width: 576px) {
+    .primary-title{
+        font-size: 28px;
+    }
+
+    .categorie{
+        margin-left: 20px !important;
+    }
+
+    .card{
+        width: 18rem;
+    }
+
+    .image-card{
+        height: 180px;
+    }
+}

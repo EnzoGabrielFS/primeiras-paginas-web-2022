@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <!-- Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- Scripts -->
+  <script src="./js/main.js" defer></script>
+  <title>Receitas do Enzo</title>
+</head>
+<body>
+  <section class="fixed">
+    <header>
+      <div id="head">
+        <img class="icon-header" src="logo.png" alt="ícone principal">
+        <h1 class="primary-title">Receitas do Enzo</h1>
+      </div>      
+    </header>
+    <nav>
+      <ul id="list-categories">
+        <li data-view="all" class="categorie active">Todas</li>
+        <li data-view="cake" class="categorie">Bolos</li>
+        <li data-view="meat" class="categorie">Carnes</li>
+        <li data-view="beverage" class="categorie">Bebidas</li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="body">
+    <div data-card="cake" class="card">
+      <img class="image-card" src="img/bolo-brigadeiro.png" alt="Bolo de Brigadeiro">
+      <div class="card-body">
+        <h3 class="title-card">Bolo de Brigadeiro</h3>
+        <small class="type-food">Bolos</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="cake" class="card">
+      <img class="image-card" src="./img/bolo-morango.png" alt="Bolo de Morango">
+      <div class="card-body">
+        <h3 class="title-card">Bolo de Morango</h3>
+        <small class="type-food">Bolos</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+	<div data-card="cake" class="card">
+		<img class="image-card" src="./img/bolo-cenoura.jpg" alt="Bolo de Cenoura">
+		<div class="card-body">
+		  <h3 class="title-card">Bolo de Cenoura</h3>
+		  <small class="type-food">Bolos</small>
+		  <i class="bi bi-heart heart-icon"></i>
+		</div>
+	</div>
+
+    <div data-card="meat" class="card">
+      <img class="image-card" src="./img/picanha.jpg" alt="Picanha">
+      <div class="card-body">
+        <h3 class="title-card">Picanha na Brasa</h3>
+        <small class="type-food">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="meat" class="card">
+      <img class="image-card" src="./img/frango.jpg" alt="Frango">
+      <div class="card-body">
+        <h3 class="title-card">Frango Assado</h3>
+        <small class="type-food">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="meat" class="card">
+      <img class="image-card" src="./img/linguica.jpg" alt="Linguiça Assada">
+      <div class="card-body">
+        <h3 class="title-card">Linguiça Assada</h3>
+        <small class="type-food">Carnes</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+    </div>
+
+    <div data-card="beverage" class="card">
+      <img class="image-card" src="./img/iogurte.jpg" alt="Iogurte">
+      <div class="card-body">
+        <h3 class="title-card">Iogurte</h3>
+        <small class="type-food">Bebidas</small>
+        <i class="bi bi-heart heart-icon"></i>
+      </div>
+	</div>  
+
+	  <div data-card="beverage" class="card">
+		<img class="image-card" src="./img/limonada.jpg" alt="Limonada">
+		<div class="card-body">
+		  <h3 class="title-card">Limonada</h3>
+		  <small class="type-food">Bebidas</small>
+		  <i class="bi bi-heart heart-icon"></i>
+		</div>
+    </div>
+
+	<div data-card="beverage" class="card">
+		<img class="image-card" src="./img/suco.jpg" alt="Suco Cítrico">
+		<div class="card-body">
+		  <h3 class="title-card">Suco Cítrico</h3>
+		  <small class="type-food">Bebidas</small>
+		  <i class="bi bi-heart heart-icon"></i>
+		</div>
+	  </div>
+
+  </section>
+
+  <footer>
+    <img class="logordp" src="logo.png">
+    <p class="copyright">&copy; Copyright Receitas do Enzo - 2022</p>
+  </footer>
+
+</body>
 </html>
